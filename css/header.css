@@ -1,0 +1,20 @@
+.h-nav li{
+font-family: 'robotoregular', sans-serif;
+}
+
+.h-nav{
+	background-color: #fff;
+	-webkit-box-shadow:none;
+	box-shadow: none;
+}
+.h-nav li a{
+	text-decoration: none;
+    color: #8d8d8d;
+    letter-spacing: 0;
+    padding: 0px 5px;
+    font-size: 10px
+}
+.h-nav ul a:hover{
+	color: #E10098;
+	background-color: rgba(0, 0, 0, 0);
+}
