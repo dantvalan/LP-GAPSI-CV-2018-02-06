@@ -51,13 +51,13 @@
 					ul
 						li(class="active"): a(href="#" style="background-color: #c6c7c9" title="GRIS" class="active")
 				.prod-size
-					p SELECCIONA TALLA:
-					ul
-						li: a(href="#" class="active") 25 cm
-						li: a(href="#") 26 cm
-						li: a(href="#") 27 cm
-						li: a(href="#") 27.5 cm
-						li: a(href="#") 28 cm
+					p SELECCIONA TALLA: 
+					input(list="tallas" class="browser-default" onchange="load_tallas(this)" onfocus="this.value=''")
+					datalist(id="tallas")
+						option(value="mx")
+						option(value="usa")
+					ul#tallas-list
+						
 			.col.s6
 				.productAddToCart
 					span.d-envio El envío se realizará cuando el artículo este disponible.

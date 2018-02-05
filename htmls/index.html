@@ -110,14 +110,13 @@
             </ul>
           </div>
           <div class="prod-size">
-            <p>SELECCIONA TALLA:</p>
-            <ul>
-              <li><a class="active" href="#">25 cm</a></li>
-              <li><a href="#">26 cm</a></li>
-              <li><a href="#">27 cm</a></li>
-              <li><a href="#">27.5 cm</a></li>
-              <li><a href="#">28 cm</a></li>
-            </ul>
+            <p>SELECCIONA TALLA: </p>
+            <input class="browser-default" list="tallas" onchange="load_tallas(this)" onfocus="this.value=''">
+            <datalist id="tallas">
+              <option value="mx"></option>
+              <option value="usa"></option>
+            </datalist>
+            <ul id="tallas-list"></ul>
           </div>
         </div>
         <div class="col s6">
@@ -316,5 +315,6 @@
     <script type="text/javascript" src="../js/materialize.js"></script>
     <script type="text/javascript" src="../js/jquery.fancybox.js"></script>
     <script type="text/javascript" src="../js/material-actions.js"></script>
+    <script type="text/javascript" src="../js/candidato.js"></script>
   </body>
 </html>
