@@ -1,0 +1,55 @@
+.row
+	.col.s9
+		h1.nombre-prod OFERTAS ESPECIALES Y PROMOCIONES
+		.row
+			.col.s6(style="border-right:solid 1px")
+				p: b Tarjetas de Liverpool
+				ul.lstyle
+					li
+						b 3 meses 
+						span sin intereses
+					li
+						b 6 meses 
+						span sin intereses
+					li
+						span presupuesto liverpool/fabricas
+			.col.s6
+				p: b Otras Tarjetas
+				ul.lstyle
+					li
+						b 3 meses 
+						span sin intereses
+					li
+						span cuenta corriente externas
+.row
+	hr
+	.col.s6(style="border-right: solid 1px")
+		p: b ARTÍCULOS SIMILARES
+		.carousel.center(data-indicators="true")
+			a(class="carousel-item" href="#one!")
+				.item
+					img(src="../images/1064906721.jpg" width="200px")
+					p Tenis Nike Hypervenom Phelon III FG para caballero
+					p.precio-art $ 1,849.00
+					p.rebaja-art $ 1,386.75
+			a(class="carousel-item" href="#two!")
+				.item
+					img(src="../images/1062492369.jpg" width="200px")
+					p Tenis Nike Mercurial Victory VI FG fútbol para caballero
+					p.precio-art $ 1,500.00
+					p.rebaja-art $ 1,127.00
+			a(class="carousel-item" href="#three!")
+				.item
+					img(src="../images/1062568748.jpg" width="200px")
+					p Tenis Adidas Predator Tango IN para caballero
+					p.precio-art 
+					p.rebaja-art $ 1,750.00
+			a(class="carousel-item" href="#four!")
+				.item
+					img(src="../images/1062168111.jpg" width="200px")
+					p Tenis Puma Evopower Vigor 3 TT para caballero
+					p.precio-art 
+					p.rebaja-art $ 1,849.00
+	.col.s6
+		include ../pugs/recommendations.pug	
+	hr

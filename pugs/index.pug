@@ -6,12 +6,19 @@ html(lang="es")
 		link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
 		link(type="text/css" rel="stylesheet" href="../css/materialize.css"  media="screen,projection")
 		link(type="text/css" rel="stylesheet" href="../css/header.css"  media="screen,projection")
+		link(type="text/css" rel="stylesheet" href="../css/stylesheet.css"  media="screen,projection")
+		link(rel="stylesheet" href="../css/jquery.fancybox.css")
+		link(rel="stylesheet" href="../css/general-summary.css")
+		link(rel="stylesheet" href="../css/promos.css")
+		link(rel="stylesheet" href="../css/footer.css")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		script(defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js")
 	body
 		include ../pugs/Header.pug
 		include ../pugs/GeneralSummary.pug
 		include ../pugs/PromotiosAndSimilarProducts.pug
-		include ../pugs/recommendations.pug
 		include ../pugs/Footer.pug
 		script(type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js")
 		script(type="text/javascript" src="../js/materialize.js")
+		script(type="text/javascript" src="../js/jquery.fancybox.js")
+		script(type="text/javascript" src="../js/material-actions.js")

@@ -1,0 +1,22 @@
+.lstyle li{
+	list-style-type: disc!important;
+    margin: 0px 30px;
+}
+.border-r{
+	border-right: : solid 1px ;
+}
+
+.item{
+	background-color: #FFF;
+	color: #000;
+}
+
+.precio-art{
+	color: #aaa;
+    font-size: 0.95em;
+    margin-bottom: 0.2em;
+    text-decoration: line-through!important;
+}
+.rebaja-art{
+     color: red;
+}

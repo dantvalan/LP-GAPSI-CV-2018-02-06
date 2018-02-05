@@ -6,7 +6,13 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="../css/materialize.css" media="screen,projection">
     <link type="text/css" rel="stylesheet" href="../css/header.css" media="screen,projection">
+    <link type="text/css" rel="stylesheet" href="../css/stylesheet.css" media="screen,projection">
+    <link rel="stylesheet" href="../css/jquery.fancybox.css">
+    <link rel="stylesheet" href="../css/general-summary.css">
+    <link rel="stylesheet" href="../css/promos.css">
+    <link rel="stylesheet" href="../css/footer.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   </head>
   <body>
     <nav class="h-nav">
@@ -20,7 +26,295 @@
         </ul>
       </div>
     </nav>
+    <nav class="h-menu">
+      <div class="nav-wrapper"><a class="button-collapse" href="#" data-activates="mobile-s"><i class="material-icons">menu</i></a>
+        <ul class="left hide-on-med-and-down" id="nav-mobile">
+          <li><a class="dropdown-button" href="#!" data-activates="departamentos-list">Departamentos <i class="material-icons right">expand_more</i></a></li>
+          <li><a class="dropdown-button" href="#!" data-activates="mesa-list">Mesa de Regalos<i class="material-icons right">expand_more</i></a></li>
+          <li><a class="dropdown-button" href="#!" data-activates="credito-list">Mi Crédito<i class="material-icons right">expand_more</i></a></li>
+          <li><a class="dropdown-button" href="#!" data-activates="seguros-list">Seguros<i class="material-icons right">expand_more</i></a></li>
+          <li class="m-search">
+            <input class="browser-default" id="search" type="search" required placeholder="Buscar por producto, categoria o marca">
+            <label class="label-icon" for="search"><i class="material-icons right">search</i></label>
+          </li>
+          <li><a href="#"><i class="material-icons right">local_mall</i><span>(0)</span></a></li>
+          <li><a href="#">Iniciar Sesión</a></li>
+        </ul>
+      </div>
+    </nav>
+    <ul class="side-nav" id="mobile-s">
+      <li><a class="dropdown-button-mobile" href="#!" data-activates="departamentos-list">Departamentos <i class="material-icons right">expand_more</i></a></li>
+      <li><a class="dropdown-button-mobile" href="#!" data-activates="mesa-list">Mesa de Regalos<i class="material-icons right">expand_more</i></a></li>
+      <li><a class="dropdown-button-mobile" href="#!" data-activates="credito-list">Mi Crédito<i class="material-icons right">expand_more</i></a></li>
+      <li><a class="dropdown-button-mobile" href="#!" data-activates="seguros-list">Seguros<i class="material-icons right">expand_more</i></a></li>
+      <li>
+        <input class="browser-default" type="search" required placeholder="Buscar por producto, categoria o marca">
+        <label class="label-icon" for="search"><i class="material-icons right">search</i></label>
+      </li>
+      <li><a href="#"><span>(0)</span><i class="material-icons right">local_mall</i></a></li>
+      <li><a href="#">Iniciar Sesión</a></li>
+    </ul>
+    <ul class="dropdown-content" id="departamentos-list">
+      <li><a href="#">Ella</a></li>
+      <li><a href="#">él</a></li>
+      <li><a href="#">Ella</a></li>
+      <li><a href="#">Bebés y Niños</a></li>
+      <li><a href="#">Zapatos</a></li>
+      <li><a href="#">Belleza y Salud</a></li>
+      <li><a href="#">Relojes, Lentes y Joyeria</a></li>
+    </ul>
+    <ul class="dropdown-content" id="mesa-list">
+      <li><a href="#">Bodas</a></li>
+      <li><a href="#">Despedidas</a></li>
+      <li><a href="#">Aniversarios</a></li>
+      <li><a href="#">Bebés</a></li>
+      <li><a href="#">XV Años</a></li>
+      <li><a href="#">Comunion</a></li>
+      <li><a href="#">Bautizos</a></li>
+    </ul>
+    <ul class="dropdown-content" id="credito-list">
+      <li><a href="#">Estado de Cuenta</a></li>
+      <li><a href="#">Estatus de Solicitud</a></li>
+      <li><a href="#">Solicita tu Tarjeta</a></li>
+    </ul>
+    <ul class="dropdown-content" id="seguros-list">
+      <li><a href="#">Seguros de Auto</a></li>
+      <li><a href="#">Más Información de Seguros</a></li>
+      <li><a href="#">Protección Celular</a></li>
+    </ul>
+    <div class="row">
+      <ul class="breadcrum">
+        <li><i class="material-icons">play_arrow</i><a class="actual" href="#">Home</a></li>
+        <li><i class="material-icons">play_arrow</i><a class="actual" href="#">Zapatos</a></li>
+        <li><i class="material-icons">play_arrow</i><a class="actual" href="#">Caballeros</a></li>
+        <li><i class="material-icons">play_arrow </i><a class="actual" href="#">Deportivos</a></li>
+        <li><i class="material-icons">play_arrow</i><a class="actual" href="#">Futbol</a></li>
+      </ul>
+    </div>
+    <div class="row">
+      <div class="col s6">
+        <div class="gallery">
+          <div class="previews"><a class="selected" href="#" data-full="../images/top1large.jpg"><img src="../images/top1small.jpg"></a><a class="selected" href="#" data-full="../images/top2large.jpg"><img src="../images/top2small.jpg"></a><a class="selected" href="#" data-full="../images/top3large.jpg"><img src="../images/top3small.jpg"></a><a class="selected" href="#" data-full="../images/top4large.jpg"><img src="../images/top4small.jpg"></a><a class="selected" href="#" data-full="../images/top5large.jpg"><img src="../images/top5small.jpg"></a></div>
+          <div class="full"><img src="../images/top1large.jpg"></div>
+        </div>
+      </div>
+      <div class="col s6">
+        <div class="col s6">
+          <h1 class="nombre-prod">Tenis Adidas Nemeziz Messi 17.4 FG fútbol para caballero</h1><span class="sku">Código de Producto.: 1065301050</span>
+          <div class="star"><i class="material-icons">star_border</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i><i class="material-icons">star_border</i></div>
+          <p class="precio">$1,499<sup class="decimalValuePrice">00</sup></p>
+          <div class="prod-color">
+            <p>color:<b>GRIS</b></p>
+            <ul>
+              <li class="active"><a class="active" href="#" style="background-color: #c6c7c9;" title="GRIS"></a></li>
+            </ul>
+          </div>
+          <div class="prod-size">
+            <p>SELECCIONA TALLA:</p>
+            <ul>
+              <li><a class="active" href="#">25 cm</a></li>
+              <li><a href="#">26 cm</a></li>
+              <li><a href="#">27 cm</a></li>
+              <li><a href="#">27.5 cm</a></li>
+              <li><a href="#">28 cm</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col s6">
+          <div class="productAddToCart"><span class="d-envio">El envío se realizará cuando el artículo este disponible.</span>
+            <div class="cantidad"><span class="cantLabel">CANTIDAD:</span>
+              <div class="cant-box">
+                <div class="less"> <span>-</span></div>
+                <div class="cant">
+                  <input class="browser-default" type="number" value="1">
+                </div>
+                <div class="more"><span>+</span></div>
+              </div>
+              <button class="btn waves-effect waves-light btn-send" type="button">Agregar a mi bolsa<i class="material-icons right">send</i></button>
+            </div>
+          </div>
+          <div class="disponivilidad"><a class="linkdsp" href="#">ver disponivilidad en tienda</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s9">
+        <hr>
+        <h1 class="nombre-prod">CARACTERISTÍCAS</h1>
+        <div class="col s6">
+          <div class="row">
+            <div class="col s6 labels"><span><b>Marca</b></span></div>
+            <div class="col s6"><span>ADIDAS</span></div>
+          </div>
+          <div class="row">
+            <div class="col s6 labels"><span><b>Disiplina</b></span></div>
+            <div class="col s6"><span>Fútbol</span></div>
+          </div>
+          <div class="row">
+            <div class="col s6 labels"><span><b>Género</b></span></div>
+            <div class="col s6"><span>Caballero</span></div>
+          </div>
+          <div class="row">
+            <div class="col s6 labels"><span><b>Modelo</b></span></div>
+            <div class="col s6"><span>CP9047</span></div>
+          </div>
+          <div class="row">
+            <div class="col s6 labels"><span><b>Material</b></span></div>
+            <div class="col s6"><span>Sintético</span></div>
+          </div>
+          <div class="row">
+            <div class="col s6 labels"><span><b>Composición</b></span></div>
+            <div class="col s6"><span>Mezcla sintética</span></div>
+          </div>
+        </div>
+        <div class="col s6">
+          <div class="row">
+            <div class="col s6 labels"><span><b>Otra Información</b></span></div>
+            <div class="col s6"><span>Ideales para coordinar tu look y dar el máximo en la cancha, con ellos te harás notar y serás la diferencia al resto de los demás</span></div>
+          </div>
+          <div class="row">
+            <div class="col s6 labels"><span><b>Tipo de pisada</b></span></div>
+            <div class="col s6"><span>Neutral</span></div>
+          </div>
+          <div class="row">
+            <div class="col s6 labels"><span><b>Tipo de Suela</b></span></div>
+            <div class="col s6"><span>FG de tacos de fibra ideales para canchas de césped natural</span></div>
+          </div>
+          <div class="row">
+            <div class="col s6 labels"><span><b>Hecho en </b></span></div>
+            <div class="col s6"><span>Malasia</span></div>
+          </div>
+          <div class="row">
+            <div class="col s6 labels"><span><b>Instrucciones de Lavado</b></span></div>
+            <div class="col s6"><span>A mano con agua fría, no usar blanqueador, ni detergentes agresivos. Secar a la sombra</span></div>
+          </div>
+        </div>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s9">
+        <h1 class="nombre-prod">OFERTAS ESPECIALES Y PROMOCIONES</h1>
+        <div class="row">
+          <div class="col s6" style="border-right:solid 1px;">
+            <p><b>Tarjetas de Liverpool</b></p>
+            <ul class="lstyle">
+              <li><b>3 meses </b><span>sin intereses</span></li>
+              <li><b>6 meses </b><span>sin intereses</span></li>
+              <li><span>presupuesto liverpool/fabricas</span></li>
+            </ul>
+          </div>
+          <div class="col s6">
+            <p><b>Otras Tarjetas</b></p>
+            <ul class="lstyle">
+              <li><b>3 meses </b><span>sin intereses</span></li>
+              <li><span>cuenta corriente externas</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <hr>
+      <div class="col s6" style="border-right: solid 1px;">
+        <p><b>ARTÍCULOS SIMILARES</b></p>
+        <div class="carousel center" data-indicators="true"><a class="carousel-item" href="#one!">
+            <div class="item"><img src="../images/1064906721.jpg" width="200px">
+              <p>Tenis Nike Hypervenom Phelon III FG para caballero</p>
+              <p class="precio-art">$ 1,849.00</p>
+              <p class="rebaja-art">$ 1,386.75</p>
+            </div></a><a class="carousel-item" href="#two!">
+            <div class="item"><img src="../images/1062492369.jpg" width="200px">
+              <p>Tenis Nike Mercurial Victory VI FG fútbol para caballero</p>
+              <p class="precio-art">$ 1,500.00</p>
+              <p class="rebaja-art">$ 1,127.00</p>
+            </div></a><a class="carousel-item" href="#three!">
+            <div class="item"><img src="../images/1062568748.jpg" width="200px">
+              <p>Tenis Adidas Predator Tango IN para caballero</p>
+              <p class="precio-art"> </p>
+              <p class="rebaja-art">$ 1,750.00</p>
+            </div></a><a class="carousel-item" href="#four!">
+            <div class="item"><img src="../images/1062168111.jpg" width="200px">
+              <p>Tenis Puma Evopower Vigor 3 TT para caballero</p>
+              <p class="precio-art"> </p>
+              <p class="rebaja-art">$ 1,849.00</p>
+            </div></a></div>
+      </div>
+      <div class="col s6">
+        <p><b>ARTICULOS RECOMENDADOS
+            <div class="carousel center" data-indicators="true"><a class="carousel-item" href="#one!">
+                <div class="item"><img src="../images/1062168111.jpg" width="200px">
+                  <p>Tenis Nike Hypervenom Phelon III FG para caballero</p>
+                  <p class="rebaja-art">$ 1,386.75</p>
+                </div></a><a class="carousel-item" href="#two!">
+                <div class="item"><img src="../images/1062492369.jpg" width="200px">
+                  <p>Tenis Nike Hypervenom Phelon III FG para caballero</p>
+                  <p class="rebaja-art">$ 1,127.00</p>
+                </div></a><a class="carousel-item" href="#three!">
+                <div class="item"><img src="../images/1062568748.jpg" width="200px">
+                  <p>Tenis Nike Hypervenom Phelon III FG para caballero</p>
+                  <p class="rebaja-art">$ 1,750.00</p>
+                </div></a><a class="carousel-item" href="#four!">
+                <div class="item"><img src="../images/1064906721.jpg" width="200px">
+                  <p>Tenis Nike Hypervenom Phelon III FG para caballero</p>
+                  <p class="rebaja-art">$ 1,849.00</p>
+                </div></a></div></b></p>
+      </div>
+      <hr>
+    </div>
+    <div class="row">
+      <div class="col s3 card-footer">
+        <p><b>SOPORTE AL CLIENTE</b></p>
+        <p><a class="footer-style-text" href="#">Facturación</a></p>
+        <p><a class="footer-style-text" href="#">Recuperar contraseña</a></p>
+        <p><a class="footer-style-text" href="#">Mis Pedidos</a></p>
+        <p><a class="footer-style-text" href="#">Ayuda al cliente</a></p>
+        <p><a class="footer-style-text" href="#">Preguntas frecuentes</a></p>
+        <p><a class="footer-style-text" href="#">Click&Collect</a></p>
+        <p><a class="footer-style-text" href="#">Cambios, devoluciones y cancelaciones</a></p>
+      </div>
+      <div class="col s3 card-footer">
+        <p><b>SERVICIOS LIVERPOOL</b></p>
+        <p><a class="footer-style-text" href="#">Crédito Liverpool </a></p>
+        <p><a class="footer-style-text" href="#">Tiempo aire</a></p>
+        <p><a class="footer-style-text" href="#">Mesa de regalos</a></p>
+        <p><a class="footer-style-text" href="#">Seguros Liverpool</a></p>
+        <p><a class="footer-style-text" href="#">Concursos y promociones</a></p>
+        <p><a class="footer-style-text" href="#">Formas de pago</a></p>
+        <p><a class="footer-style-text" href="#">Viajes</a></p>
+      </div>
+      <div class="col s3 card-footer">
+        <p><b>ACERCA DE LIVERPOOL</b></p>
+        <p><a class="footer-style-text" href="#">Acerca de nosotros </a></p>
+        <p><a class="footer-style-text" href="#">Bolsa de trabajo</a></p>
+        <p><a class="footer-style-text" href="#">Relación con inversionistas</a></p><br>
+        <p><b>HORARIO DE TIENDA</b></p>
+        <p>Lunes a Domingo de 11:00 am a 09:00pm</p>
+        <p class="store_footer">ubica una tienda mas cercana</p>
+      </div>
+      <div class="col s3 card-footer">
+        <p><b>VENTAS POR TELÉFONO</b></p>
+        <p><a class="footer-style-text" href="#">5262-9999 / 01 800 713 5555</a></p>
+        <p><a class="footer-style-text" href="#">Desde tu celular *7171</a></p><br>
+        <p><b>COMENTARIOS Y SUGERENCIAS</b></p>
+        <p><a class="footer-style-text" href="#">atencion@liverpool.com.mx</a></p>
+        <p><b>SUSCRÍBETE</b></p>
+        <button class=" grey darken-3 waves-effect waves-light btn">Suscríbete a nuestro boletín</button>
+        <p class="redes-sociales"><b>SÍGUENOS</b><a href="#"><i class="fab fa-facebook-f"> </i></a><a href="#"><i class="fab fa-twitter">   </i></a><a href="#"><i class="fab fa-instagram">  </i></a></p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+      <div class="center-footer">
+        <p>Precio en rojo incluye descuento más alto pagando de contado. Las promociones de www.liverpool.com.mx pueden diferir de las promociones publicadas en tienda El formato de los precios puede verse afectado por las configuraciones y diferencia de navegadores.</p>
+        <p>*La promoción aplica solo a productos participantes.</p>
+        <p>*Las promociones de vinos y licores no aplican para los estados de: Sonora, Chihuahua, Yucatán y Baja California.</p>
+        <p>Términos y condiciones | Aviso de privacidad © | Liverpool | Todos los derechos reservados D.R. ®</p>
+      </div>
+    </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="../js/materialize.js"></script>
+    <script type="text/javascript" src="../js/jquery.fancybox.js"></script>
+    <script type="text/javascript" src="../js/material-actions.js"></script>
   </body>
 </html>

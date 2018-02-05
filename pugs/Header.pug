@@ -8,3 +8,67 @@ nav.h-nav
 			li: a(href="#") TIENDAS
 			li: a(href="#") PEDIDOS
 			li: a(href="#") AYUDA
+
+nav.h-menu
+	.nav-wrapper
+		a(href="#" data-activates="mobile-s" class="button-collapse"): i(class="material-icons") menu
+		ul(id="nav-mobile" class="left hide-on-med-and-down")
+			li: a(class="dropdown-button" href="#!" data-activates="departamentos-list") Departamentos 
+				i(class="material-icons right") expand_more
+			li: a(class="dropdown-button" href="#!" data-activates="mesa-list") Mesa de Regalos
+				i(class="material-icons right") expand_more
+			li: a(class="dropdown-button" href="#!" data-activates="credito-list") Mi Crédito
+				i(class="material-icons right") expand_more
+			li: a(class="dropdown-button" href="#!" data-activates="seguros-list") Seguros
+				i(class="material-icons right") expand_more
+			li(class="m-search")
+				input(id="search" type="search" required class="browser-default" placeholder="Buscar por producto, categoria o marca")
+				label( class="label-icon" for="search")
+					i(class="material-icons right") search
+			li: a(href="#")
+					i(class="material-icons right") local_mall
+					span (0)
+			li: a(href="#") Iniciar Sesión
+
+ul(class="side-nav" id="mobile-s")
+	li: a(class="dropdown-button-mobile" href="#!" data-activates="departamentos-list") Departamentos 
+		i(class="material-icons right") expand_more
+	li: a(class="dropdown-button-mobile" href="#!" data-activates="mesa-list") Mesa de Regalos
+		i(class="material-icons right") expand_more
+	li: a(class="dropdown-button-mobile" href="#!" data-activates="credito-list") Mi Crédito
+		i(class="material-icons right") expand_more
+	li: a(class="dropdown-button-mobile" href="#!" data-activates="seguros-list") Seguros
+		i(class="material-icons right") expand_more
+	li
+		input(type="search" required class="browser-default" placeholder="Buscar por producto, categoria o marca")
+		label( class="label-icon" for="search")
+			i(class="material-icons right") search
+	li: a(href="#")
+			span (0)
+			i(class="material-icons right") local_mall
+	li: a(href="#") Iniciar Sesión
+
+ul(id="departamentos-list" class="dropdown-content")
+	li: a(href="#") Ella
+	li: a(href="#") él
+	li: a(href="#") Ella
+	li: a(href="#") Bebés y Niños
+	li: a(href="#") Zapatos
+	li: a(href="#") Belleza y Salud
+	li: a(href="#") Relojes, Lentes y Joyeria
+ul(id="mesa-list" class="dropdown-content")
+	li: a(href="#") Bodas
+	li: a(href="#") Despedidas
+	li: a(href="#") Aniversarios
+	li: a(href="#") Bebés
+	li: a(href="#") XV Años
+	li: a(href="#") Comunion
+	li: a(href="#") Bautizos
+ul(id="credito-list" class="dropdown-content")
+	li: a(href="#") Estado de Cuenta
+	li: a(href="#") Estatus de Solicitud
+	li: a(href="#") Solicita tu Tarjeta
+ul(id="seguros-list" class="dropdown-content")
+	li: a(href="#") Seguros de Auto
+	li: a(href="#") Más Información de Seguros
+	li: a(href="#") Protección Celular
