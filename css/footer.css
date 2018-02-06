@@ -1,10 +1,17 @@
+.footer_section{
+	background-color: #333;
+
+}
+.card-footer b{
+	color: #e10098
+}
 .center-footer{
 	text-align: center;
-	color: #666;
+	color: #fff;
 	font-size: 10px;
 }
 .footer-style-text{
-	color: #666;
+	color: #fff;
 	font-size: 10px;
 }
 .card-footer{
@@ -16,5 +23,5 @@
 }
 .redes-sociales a{
 	margin: 10px;
-	color: #666
+	color: #e10098
 }
