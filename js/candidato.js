@@ -5,7 +5,7 @@ var tallas= {
 
 function load_tallas(e){
 	var lis="";
-	var v = e.value;
+	var v = (e == null ? "mx": e.value);
 	console.log(tallas[v])
 	for(var i =0;i<tallas[v].length;i++){
 		lis+="<li><a>"+ tallas[v][i] +"</a></li>"
@@ -13,3 +13,6 @@ function load_tallas(e){
 	
 	$('#tallas-list').html(lis);
 }
+$(function(){
+	load_tallas(null);
+})
